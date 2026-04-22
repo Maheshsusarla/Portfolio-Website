@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahesh Susarla — Python Full Stack Developer</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Devicons -->
+    <link
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts: Syne + DM Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">
+          <span class="logo-bracket">[</span>MS<span class="logo-bracket"
+            >]</span
+          >
+        </a>
+        <div class="d-flex align-items-center gap-3 ms-auto">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+            <span class="toggler-line"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-outline-accent" href="resume.pdf" download>
+                <i class="fa-solid fa-download me-2"></i>Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+       HERO
+  ============================================================ -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 order-2 order-lg-1">
+            <p class="hero-eyebrow">
+              <span class="eyebrow-dot"></span>Open to Opportunities · Fresher
+              2026
+            </p>
+            <h1 class="hero-title">
+              Hi, I'm<br />
+              <span class="hero-name">Mahesh Susarla</span>
+            </h1>
+            <div class="hero-role">
+              <span class="role-prefix">{"role":</span>
+              <span class="role-text" id="typedRole"></span>
+              <span class="role-cursor">|</span>
+              <span class="role-suffix">}</span>
+            </div>
+            <p class="hero-desc">
+              Motivated and enthusiastic Python Full Stack Developer with
+              knowledge of Python, Django, HTML, CSS, JavaScript, Bootstrap,
+              ReactJS, and SQL. Eager to build efficient, scalable web
+              applications and grow as a developer.
+            </p>
+            <div class="hero-actions d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-accent btn-lg">
+                View My Work <i class="fa-solid fa-arrow-right ms-2"></i>
+              </a>
+              <a href="#contact" class="btn btn-ghost btn-lg">Let's Talk</a>
+            </div>
+            <!-- Social strip -->
+            <div class="hero-socials d-flex gap-4 mt-5">
+              <a
+                href="https://github.com/Maheshsusarla"
+                target="_blank"
+                class="social-link"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mahesh-susarla-509388279/"
+                target="_blank"
+                class="social-link"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="mailto:maheshsusarla5@gmail.com"
+                class="social-link"
+                aria-label="Email"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a
+                href="tel:+ 919381802914"
+                class="social-link"
+                aria-label="Phone"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 text-center">
+            <div class="hero-avatar-wrap">
+              <div class="avatar-ring"></div>
+              <div class="avatar-img">
+                <!-- <span>MS</span> -->
+                <img src="./mahesh img.jpeg" alt="image" />
+              </div>
+              <div class="avatar-badge">
+                <i class="fa-solid fa-code"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Scroll down">
+          <span class="scroll-cue-line"></span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Image column -->
+          <div class="col-lg-5">
+            <div class="about-img-wrap reveal-left">
+              <div class="about-img-frame">
+                <div class="about-img-placeholder">
+                  <!-- <i class="fa-solid fa-user-tie"></i> -->
+                  <img src="./mahi.img.jpeg" alt="image" />
+                </div>
+              </div>
+              <div class="stat-card stat-card-1 reveal-up">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-card stat-card-2 reveal-up">
+                <span class="stat-num">4+</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+          <!-- Text column -->
+          <div class="col-lg-7 reveal-right">
+            <p class="section-eyebrow">Who I Am</p>
+            <h2 class="section-title">
+              Turning ideas into<br /><span class="accent">elegant code</span>
+            </h2>
+            <p class="section-body mt-3"></p>
+            <p class="section-body">
+              I am a recent graduate currently learning Python Full Stack
+              Development with basic knowledge of front-end and back-end
+              technologies. I have a good understanding of Python, HTML, CSS,
+              JavaScript, and basic database concepts. During my final year, I
+              worked on a Network Anomaly Detection project using an Autoencoder
+              model, which helped me gain knowledge in machine learning and data
+              analysis. I also developed projects like a personal portfolio
+              website, coffee management system, and bank management system to
+              improve my practical skills. I am passionate about building
+              real-world applications, learning new technologies, and enhancing
+              my problem-solving abilities. I am a quick learner and highly
+              motivated to start my career in the IT industry as a software
+              developer and grow professionally.
+            </p>
+            <ul class="about-info-list mt-4">
+              <li>
+                <span class="info-key">Name</span
+                ><span class="info-val">Mahesh Susarla</span>
+              </li>
+              <li>
+                <span class="info-key">Location</span
+                ><span class="info-val">Nellore, Andhra Pradesh, India</span>
+              </li>
+              <li>
+                <span class="info-key">Degree</span
+                ><span class="info-val"
+                  >B.Tech CSE — RSR Engineering College (2022–2026)</span
+                >
+              </li>
+              <li>
+                <span class="info-key">Email</span
+                ><span class="info-val">maheshsusarla5@gmail.com</span>
+              </li>
+              <li>
+                <span class="info-key">Phone</span
+                ><span class="info-val">+91 93818 02914</span>
+              </li>
+              <li>
+                <span class="info-key">Languages</span
+                ><span class="info-val">English, Telugu</span>
+              </li>
+              <li>
+                <span class="info-key">Status</span
+                ><span class="info-val text-accent">Open to Opportunities</span>
+              </li>
+            </ul>
+            <a href="resume.pdf" download class="btn btn-accent mt-4">
+              <i class="fa-solid fa-download me-2"></i>Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SKILLS  (icon cards only — no percentage bars)
+  ============================================================ -->
+    <section id="skills" class="section-pad skills-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-eyebrow">What I Know</p>
+          <h2 class="section-title">
+            Technical <span class="accent">Expertise</span>
+          </h2>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-group reveal-up">
+          <h5 class="skill-group-label">
+            <i class="fa-solid fa-code me-2"></i>Programming Languages
+          </h5>
+          <div class="skill-icons-row">
+            <div class="skill-icon-card">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-group reveal-up">
+          <h5 class="skill-group-label">
+            <i class="fa-solid fa-globe me-2"></i>Web Development
+          </h5>
+          <div class="skill-icons-row">
+            <div class="skill-icon-card">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="devicon-bootstrap-plain colored"></i>
+              <span>Bootstrap</span>
+            </div>
+            <!-- <div class="skill-icon-card">
+            <i class="devicon-react-original colored"></i>
+            <span>ReactJS</span>
+          </div>
+          <div class="skill-icon-card">
+            <i class="devicon-django-plain colored"></i>
+            <span>Django</span>
+          </div> -->
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-group reveal-up">
+          <h5 class="skill-group-label">
+            <i class="fa-solid fa-database me-2"></i>Database
+          </h5>
+          <div class="skill-icons-row">
+            <!-- <div class="skill-icon-card">
+            <i class="devicon-mysql-plain colored"></i>
+            <span>MySQL</span>
+          </div> -->
+            <div class="skill-icon-card">
+              <i class="devicon-postgresql-plain colored"></i>
+              <span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-group reveal-up">
+          <h5 class="skill-group-label">
+            <i class="fa-solid fa-wrench me-2"></i>Tools & Platforms
+          </h5>
+          <div class="skill-icons-row">
+            <div class="skill-icon-card">
+              <i class="devicon-git-plain colored"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="devicon-github-original"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-icon-card">
+              <i class="devicon-vscode-plain colored"></i>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="cert-strip reveal-up mt-4">
+          <p class="section-eyebrow justify-content-center">Certifications</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+            <div class="cert-pill">
+              <i class="fa-solid fa-certificate me-2"></i>Basics of Python —
+              Infosys Springboard
+            </div>
+            <div class="cert-pill">
+              <i class="fa-solid fa-certificate me-2"></i>Python Fundamentals
+              for Beginners — Infosys Springboard
+            </div>
+            <div class="cert-pill">
+              <i class="fa-solid fa-certificate me-2"></i>HTML, CSS &amp;
+              JavaScript — LetsUpgrade
+            </div>
+            <div class="cert-pill">
+              <i class="fa-solid fa-certificate me-2"></i>Java Foundation —
+              Infosys Springboard
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-eyebrow">My Work</p>
+          <h2 class="section-title">
+            Featured <span class="accent">Projects</span>
+          </h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4 reveal-up">
+            <div class="project-card">
+              <div
+                class="project-thumb"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0f2027,
+                    #203a43,
+                    #2c5364
+                  );
+                "
+              >
+                <span class="proj-emoji">🌐</span>
+                <span class="proj-date-badge">March 2025</span>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Web App</span>
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-desc">
+                  A responsive and visually appealing personal portfolio website
+                  built to showcase projects, skills, and contact info with an
+                  interactive user-friendly layout.
+                </p>
+                <div class="project-stack">
+                  <span class="stack-pill"
+                    ><i class="devicon-html5-plain colored me-1"></i>HTML</span
+                  >
+                  <span class="stack-pill"
+                    ><i class="devicon-css3-plain colored me-1"></i>CSS</span
+                  >
+                  <span class="stack-pill"
+                    ><i class="devicon-bootstrap-plain colored me-1"></i
+                    >Bootstrap</span
+                  >
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://maheshsusarla.github.io/my-portfolio_main/"
+                    class="btn btn-sm-accent"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i
+                    >Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/Maheshsusarla/my-portfolio_main.git"
+                    class="btn btn-sm-ghost"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github me-1"></i>Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="col-md-6 col-lg-4 reveal-up"
+            style="transition-delay: 0.1s"
+          >
+            <div class="project-card">
+              <div
+                class="project-thumb"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #1a0a0a,
+                    #6b2f2f,
+                    #3a1a0a
+                  );
+                "
+              >
+                <span class="proj-emoji">☕</span>
+                <span class="proj-date-badge">July 2025</span>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Python CLI</span>
+                <h3 class="project-title">Coffee Management System</h3>
+                <p class="project-desc">
+                  A Python program to take coffee orders from a menu and
+                  calculate the total cost. Users can select items and view the
+                  final bill easily.
+                </p>
+                <div class="project-stack">
+                  <span class="stack-pill"
+                    ><i class="devicon-python-plain colored me-1"></i
+                    >Python</span
+                  >
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Maheshsusarla/Coffee-Management.git"
+                    class="btn btn-sm-accent"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i
+                    >Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/Maheshsusarla/Coffee-Management.git"
+                    class="btn btn-sm-ghost"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github me-1"></i>Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="col-md-6 col-lg-4 reveal-up"
+            style="transition-delay: 0.2s"
+          >
+            <div class="project-card">
+              <div
+                class="project-thumb"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    #0a1a0a,
+                    #1a4a1a,
+                    #0a2a0a
+                  );
+                "
+              >
+                <span class="proj-emoji">🏦</span>
+                <span class="proj-date-badge">October 2025</span>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Python App</span>
+                <h3 class="project-title">Python Banking Management System</h3>
+                <p class="project-desc">
+                  A real-time menu-driven banking app supporting deposit,
+                  withdrawal, balance inquiry and transaction history using
+                  Python fundamentals and the datetime module.
+                </p>
+                <div class="project-stack">
+                  <span class="stack-pill"
+                    ><i class="devicon-python-plain colored me-1"></i
+                    >Python</span
+                  >
+                  <span class="stack-pill"
+                    ><i class="fa-solid fa-terminal me-1"></i>CLI</span
+                  >
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Maheshsusarla/Banking-Management-python"
+                    class="btn btn-sm-accent"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i
+                    >Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/Maheshsusarla/Banking-Management-python"
+                    class="btn btn-sm-ghost"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github me-1"></i>Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div
+            class="col-md-6 col-lg-4 reveal-up"
+            style="transition-delay: 0.2s"
+          >
+            <div class="project-card">
+              <div
+                class="project-thumb"
+                style="
+                   background: linear-gradient(
+                    135deg,
+                    #0f2027,
+                    #203a43,
+                    #2c5364
+                  );
+                "
+              >
+                <span class="proj-emoji">🛡️</span>
+                <span class="proj-date-badge">April 2026</span>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Deep Learning project</span>
+                <h3 class="project-title">
+                  NETWORK ANOMALY DETECTION USING AUTOENCODERS
+                </h3>
+                <p class="project-desc">
+                  This project detects cyberattacks in a network using a deep
+                  learning autoencoder. The model learns the normal behavior of
+                  network traffic and identifies abnormal patterns as
+                  intrusions. Using the CICIDS2017 dataset, the system can
+                  detect known and unknown (zero-day) attacks with high
+                  accuracy. This approach improves network security, reduces
+                  false alarms, and provides an intelligent intrusion
+                  detection solution.
+                </p>
+                <div class="project-stack">
+                  <!-- HTML -->
+                  <span class="stack-pill">
+                    <i class="devicon-html5-plain colored me-1"></i> HTML
+                  </span>
+
+                  <!-- CSS -->
+                  <span class="stack-pill">
+                    <i class="devicon-css3-plain colored me-1"></i> CSS
+                  </span>
+
+                  <!-- JavaScript -->
+                  <span class="stack-pill">
+                    <i class="devicon-javascript-plain colored me-1"></i>
+                    JavaScript
+                  </span>
+
+                  <!-- Python -->
+                  <span class="stack-pill">
+                    <i class="devicon-python-plain colored me-1"></i> Python
+                  </span>
+                  <!-- Flask -->
+                  <span class="stack-pill">
+                    <i class="devicon-flask-original me-1"></i> Flask
+                  </span>
+
+                  <!-- Pandas -->
+                  <span class="stack-pill">
+                    <i class="devicon-pandas-original colored me-1"></i> Pandas
+                  </span>
+
+                  <!-- NumPy -->
+                  <span class="stack-pill">
+                    <i class="devicon-numpy-original colored me-1"></i> NumPy
+                  </span>
+
+                  <!-- Scikit-learn -->
+                  <span class="stack-pill">
+                    <i class="devicon-scikitlearn-plain colored me-1"></i>
+                    Scikit-learn
+                  </span>
+
+                  <!-- Seaborn -->
+                  <span class="stack-pill">
+                    <i class="fa-solid fa-chart-line me-1"></i> Seaborn
+                  </span>
+
+                  <!-- Matplotlib -->
+                  <span class="stack-pill">
+                    <i class="fa-solid fa-chart-bar me-1"></i> Matplotlib
+                  </span>
+
+                  <span class="stack-pill">
+                    <i class="devicon-mysql-plain colored me-1"></i> MySQL
+                  </span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Maheshsusarla/NETWORK-ANOMALY-DETECTION-USING-AUTOENCODERS.git"
+                    class="btn btn-sm-accent"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i
+                    >Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/Maheshsusarla/NETWORK-ANOMALY-DETECTION-USING-AUTOENCODERS.git"
+                    class="btn btn-sm-ghost"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github me-1"></i>Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       ACHIEVEMENTS
+  ============================================================ -->
+    <section id="achievements" class="section-pad skills-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-eyebrow">Recognition</p>
+          <h2 class="section-title">
+            Achievements &amp; <span class="accent">Extras</span>
+          </h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4 reveal-up">
+            <div class="achieve-card">
+              <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+              <h4 class="achieve-title">Java Foundation Certification</h4>
+              <p class="achieve-body">
+                Successfully completed the Java Foundation program, gaining
+                hands-on experience in OOP, data types, loops, arrays, classes,
+                methods, and exception handling.
+              </p>
+              <span class="achieve-tag">Infosys Springboard</span>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 reveal-up"
+            style="transition-delay: 0.1s"
+          >
+            <div class="achieve-card">
+              <div class="achieve-icon">
+                <i class="fa-solid fa-hands-helping"></i>
+              </div>
+              <h4 class="achieve-title">NSS Volunteer</h4>
+              <p class="achieve-body">
+                Actively participated as a National Service Scheme volunteer
+                during 2024–2025, contributing to community service and social
+                initiatives at RSR Engineering College.
+              </p>
+              <span class="achieve-tag">RSR Engg. College · 2024–2025</span>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 reveal-up"
+            style="transition-delay: 0.2s"
+          >
+            <div class="achieve-card">
+              <div class="achieve-icon">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <h4 class="achieve-title">Self-Driven Learner</h4>
+              <p class="achieve-body">
+                Passionate about exploring online resources and completing
+                certifications. Continuously building new skills in Python, web
+                development, and modern frameworks.
+              </p>
+              <span class="achieve-tag">Ongoing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+    <section id="contact" class="section-pad contact-section">
+      <div class="container">
+        <div class="row g-5 justify-content-center">
+          <div class="col-lg-5">
+            <p class="section-eyebrow">Get In Touch</p>
+            <h2 class="section-title">
+              Let's build something<br /><span class="accent"
+                >great together</span
+              >
+            </h2>
+            <p class="section-body mt-3">
+              I'm actively looking for internships and entry-level developer
+              roles. If you have a project or opportunity, my inbox is always
+              open!
+            </p>
+            <ul class="contact-info-list mt-4">
+              <li>
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-envelope"></i
+                ></span>
+                <a href="mailto:maheshsusarla6@gmail.com"
+                  >maheshsusarla5@gmail.com</a
+                >
+              </li>
+              <li>
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-phone"></i
+                ></span>
+                <a href="tel:+919381802914">+91 93818 02914</a>
+              </li>
+              <li>
+                <span class="contact-icon"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <span>Nellore, Andhra Pradesh, India</span>
+              </li>
+            </ul>
+            <div class="d-flex gap-3 mt-4">
+              <a
+                href="https://www.linkedin.com/in/mahesh-susarla-509388279/"
+                target="_blank"
+                class="social-link-lg"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/Maheshsusarla"
+                target="_blank"
+                class="social-link-lg"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="mailto:maheshsusarla5@gmail.com"
+                class="social-link-lg"
+                aria-label="Email"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form
+              action="https://formspree.io/f/xlganpga"
+              method="POST"
+              id="contactForm"
+              class="contact-form"
+            >
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input
+                      type="text"
+                      id="fname"
+                      name="First Name"
+                      class="form-control"
+                      placeholder="John"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your first name.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input
+                      type="text"
+                      id="lname"
+                      name="Last Name"
+                      class="form-control"
+                      placeholder="Doe"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your last name.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="Email"
+                      class="form-control"
+                      placeholder="john@example.com"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter a valid email address.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="Subject"
+                      class="form-control"
+                      placeholder="Internship Inquiry"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter a subject.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="Message"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Tell me about the opportunity…"
+                      required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Please enter your message.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-accent btn-lg w-100"
+                    id="submitBtn"
+                  >
+                    <span class="btn-text"
+                      >Send Message <i class="fa-solid fa-paper-plane ms-2"></i
+                    ></span>
+                    <span class="btn-loading d-none"
+                      ><i class="fa-solid fa-circle-notch fa-spin me-2"></i
+                      >Sending…</span
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="form-success d-none mt-3">
+                <i class="fa-solid fa-circle-check me-2"></i>
+                Message sent! Mahesh will get back to you soon.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div
+          class="footer-inner d-flex flex-column flex-md-row align-items-center justify-content-between gap-4"
+        >
+          <a class="navbar-brand" href="#hero">
+            <span class="logo-bracket">[</span>MS<span class="logo-bracket"
+              >]</span
+            >
+          </a>
+          <p class="footer-copy mb-0">
+            &copy; 2026 Mahesh .
+            <i class="fa-solid fa-heart text-accent"></i> &amp;
+          </p>
+          <div class="d-flex gap-3">
+            <a
+              href="https://github.com/Maheshsusarla"
+              target="_blank"
+              class="social-link"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mahesh-susarla-509388279/"
+              target="_blank"
+              class="social-link"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="mailto:maheshsusarla5@gmail.com"
+              class="social-link"
+              aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
